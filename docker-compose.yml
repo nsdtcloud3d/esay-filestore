@@ -1,0 +1,19 @@
+version: "2"
+services:
+  ####
+  # Speckle Server dependencies
+  #######
+  tiny_filepreviewer:
+    image: easyfilestore:1.0
+    container_name: easyfilestore
+    restart: always
+    mem_limit: "1000m"
+    memswap_limit: "1000m"
+    #command: ["bash", "-c", "/wait && node bin/www"]
+    command: ["bash", "-c", "yarn start" ]
+    ports:
+      - "3009:3009"
+    environment:
+      PORT: 3009
+    volumes:
+      - /opt/easyfilestore/public:/easy-filestore/public

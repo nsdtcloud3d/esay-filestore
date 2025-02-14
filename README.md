@@ -1,6 +1,6 @@
 <h1 style="text-align: center">Easy Filestore</h1> 
 
-Easy Filestore 是一个极其简单的文件存储服务，基于 Node.js 和 Express 构建。它允许用户上传文件并生成唯一的下载链接，支持通过 Docker 快速部署。核心代码仅 60 行，轻量且易于扩展。
+Easy Filestore 是一个极其简单的文件存储服务，基于 Node.js 和 Express 构建。核心代码仅 60 行，轻量且易于扩展。它允许用户上传文件并生成唯一的下载链接，支持通过 Docker 快速部署。
 
 ### 功能特性
 
@@ -32,7 +32,7 @@ Easy Filestore 是一个极其简单的文件存储服务，基于 Node.js 和 E
 - 克隆仓库：
 
   ```bash
-  git clone https://github.com/your-repo/easy-filestore.git
+  git clone https://github.com/nsdtcloud3d/esay-filestore.git
   cd easy-filestore
   ```
 
@@ -175,3 +175,4 @@ easy-filestore/
 #### 联系
 
 如有问题，请联系：zhuyi_20230112@qq.com
+

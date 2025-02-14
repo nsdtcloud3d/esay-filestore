@@ -18,7 +18,6 @@ app.post("/upload", (req, res) => {
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send("No files were uploaded.");
   }
-
   console.log(`File upload , store file: ${req.files.file?.name} `);
 
   const uploadedFile = req.files.file;
@@ -52,6 +51,7 @@ app.get("/download/:fileName", (req, res) => {
     res.status(404).send("File not found.");
   }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
